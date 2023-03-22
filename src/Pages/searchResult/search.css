@@ -1,0 +1,45 @@
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 0rem 5rem;
+}
+
+.dark .card-wrapper{
+  background-color: #0a0a0a;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem 0rem;
+  color: red;
+  font-size: large;
+}
+
+.dark .error{
+  background-color: #0a0a0a;
+}
+
+@media(768px<width<=1024px){
+  .card-wrapper{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media(width<=768px){
+  .card-wrapper{
+    grid-template-columns: repeat(2,1fr);
+    padding: 0rem 3rem;
+  }
+}
+
+
+@media(width<=421px){
+  .card-wrapper{
+    grid-template-columns: repeat(1,1fr);
+    margin: auto;
+    padding: 0rem 2rem;
+  }
+}
+

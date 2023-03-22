@@ -1,0 +1,41 @@
+.cat-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 5rem 4rem 5rem;
+  gap: 1rem;
+}
+
+.cat-btns button {
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.cat-btns .btn-unactive {
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+  color: var(--color-purple);
+}
+
+.dark .cat-btns .btn-unactive {
+  background-color: #0a0a0a;
+  box-shadow: 5px 5px 10px #171818, -5px -5px 10px #000000;
+}
+
+.cat-btns .btn-active {
+  background: linear-gradient(
+    45deg,
+    var(--color-dark-purple),
+    var(--color-purple)
+  );
+  color: white;
+}
+
+.dark .cat-btns .btn-active{
+    color: #000000;
+}
