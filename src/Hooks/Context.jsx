@@ -103,6 +103,7 @@ const AppProvider = ({ children }) => {
     const category = ["general", "world", "nation", "business", "technology", "entertainment", "sports", "science and health"]
 
     useEffect(() => {
+        titleChange("Home");
         let randomNum = Math.floor(Math.random() * category.length);
         console.log(category[randomNum])
         getApiData(`${url}top-headlines?category=${category[randomNum]}&lang=en&apikey=${apiKey}`);
