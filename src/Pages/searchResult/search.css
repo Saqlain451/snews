@@ -1,8 +1,18 @@
 
+.search-result{
+  background-color: var(--bg-color);
+  padding: 3rem 0rem;
+}
+
+.dark .search-result{
+  background-color: #0a0a0a;
+  color: white;
+}
+
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   padding: 0rem 5rem;
 }
 
@@ -24,13 +34,14 @@
 @media(768px<width<=1024px){
   .card-wrapper{
     grid-template-columns: repeat(3,1fr);
+    padding: 0rem 2rem;
   }
 }
 
 @media(width<=768px){
   .card-wrapper{
     grid-template-columns: repeat(2,1fr);
-    padding: 0rem 3rem;
+    padding: 0rem 2rem;
   }
 }
 

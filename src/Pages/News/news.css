@@ -2,3 +2,15 @@
     padding: 5rem;
     background-color: #eaeaea;
 }
+
+.dark .news{
+    background-color: #0a0a0a;
+    color: white;
+    height: 100vh;
+}
+
+@media (width<=421px){
+    .light .news{
+        padding: 1rem;
+    }
+}

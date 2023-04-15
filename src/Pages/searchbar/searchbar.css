@@ -44,5 +44,30 @@
 }
 
 @media(width<=1024px){
-    
+    .search{
+        padding: 3%;
+    }
+
+    .search-bar input{
+        width: 56%;
+    }
+
+}
+
+@media(width<=768px){
+    .search{
+        padding: 2%;
+    }
+    .search-bar input{
+        width: 60%;
+    }
+}
+
+@media(width<=421px){
+    .search{
+        padding: 1%;
+    }
+    .search-bar input{
+        width: 80%;
+    }
 }

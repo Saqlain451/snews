@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./hero.css"
 const Hero = ({title1,description,img,spanTitle,title2}) => {
     return (

@@ -39,3 +39,23 @@
 .dark .cat-btns .btn-active{
     color: #000000;
 }
+
+@media(width<=421px){
+  .cat-btns{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem;
+  }
+  .cat-btns button{
+    padding: 0.7rem 2rem;
+  }
+}
+
+
+@media(width<=320px){
+  .cat-btns{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+  }
+}

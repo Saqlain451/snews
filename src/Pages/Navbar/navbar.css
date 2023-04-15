@@ -1,6 +1,6 @@
 header{
     height: 9rem;
-    background-color:var(--bg-color);
+    background-color:white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,6 +9,7 @@ header{
     position: sticky !important;
     top: 0;
     left: 0;
+    right: 0;
 }
 
 .dark header{

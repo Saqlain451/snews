@@ -6,6 +6,8 @@ import ScrollToTop from './Component/ScrollToTop'
 import Home from './Pages/Home/Home'
 import News from './Pages/News/News'
 import Navbar from './Pages/Navbar/Navbar'
+
+import Contact from './Pages/Contact/Contact';
 const App = () => {
   const { isDark } = useGlobalHook();
   return (
@@ -16,6 +18,9 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/news" element={<News/>} />
+          <Route path='/search' element={<News/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+
         </Routes>
       </BrowserRouter>
     </div>

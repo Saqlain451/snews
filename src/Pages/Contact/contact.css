@@ -1,0 +1,103 @@
+.contact{
+    padding: 5rem;
+    width: auto;
+    height: auto;
+}
+
+.dark .contact{
+    background-color: #0a0a0a;
+    color: white;
+}
+.contact form{
+    background-color: transparent;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    width: 33%;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.dark .contact form{
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #171818;
+}
+.contact form h1{
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.contact form label{
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: #6F6F6F;
+}
+.contact form input{
+    width: 100%;
+    height: 4rem;
+    margin-top: .5rem;
+    background-color: transparent;
+    border: 2px solid var(--color-purple);
+    border-radius: .5rem;
+    caret-color: var(--color-dark-purple);
+    padding: 0rem 1rem;
+}
+
+.contact form input:focus{
+    border: 2px solid var(--color-purple);
+    outline: none;
+}
+
+.contact form textarea{
+    height: 15rem;  
+    width: 100%;
+    margin-top: 1rem;
+    background: transparent; 
+    border: 2px solid var(--color-purple);
+    border-radius: .5rem;   
+    padding: 1rem;
+    caret-color: var(--color-dark-purple);
+}
+
+.contact form textarea:focus{
+    border: 2px solid var(--color-purple);
+    outline: none;
+}
+
+.contact form button{
+    width: 100%;
+    border: none;
+    background-color: var(--color-dark-purple);
+    margin-top: 2rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+@media(width<=1024px){
+    .contact form{
+        width: 50%;
+    }
+}
+
+@media(width<=768px){
+    .contact{
+        padding: 3.5rem;
+    }
+    .contact form{
+        width: 66%;
+    }
+}
+@media(width<=442px){
+    .contact{
+        padding: 2rem;
+    }
+    .contact form{
+        width: 95%;
+    }
+}
+
